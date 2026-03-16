@@ -2027,21 +2027,15 @@ textarea {
   .team-grid { grid-template-columns: repeat(2, 1fr); }
   .about-stats-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
   .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
-}
 
-/* Mobile */
-@media screen and (max-width: 700px) {
-  :root {
-    --container-padding: 1rem;
-    --font-size-4xl: 2rem;
-    --font-size-3xl: 1.75rem;
-    --font-size-2xl: 1.5rem;
-    --font-size-xl: 1.25rem;
+  /* Header / Nav — hamburger replaces nav links on tablet & mobile */
+  .header-inner {
+    justify-content: space-between;
   }
 
-  /* Header / Nav */
   .hamburger-btn {
     display: flex;
+    order: -1; /* always at far-left, before the logo */
   }
 
   .main-nav {
@@ -2073,7 +2067,6 @@ textarea {
   .nav-link {
     padding: 0.75rem 1rem;
     border-radius: var(--radius-md);
-    font-size: var(--font-size-base);
   }
 
   .nav-cta {
@@ -2086,6 +2079,22 @@ textarea {
   .nav-cta .btn {
     width: 100%;
     justify-content: center;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 700px) {
+  :root {
+    --container-padding: 1rem;
+    --font-size-4xl: 2rem;
+    --font-size-3xl: 1.75rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-xl: 1.25rem;
+  }
+
+  /* Nav link size override for small screens */
+  .nav-link {
+    font-size: var(--font-size-base);
   }
 
   /* Hero */
