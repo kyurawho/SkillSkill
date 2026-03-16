@@ -333,7 +333,7 @@
       var checkbox = $('#reg-terms');
       var errEl = $('#terms-error');
       if (!checkbox || !checkbox.checked) {
-        if (errEl) { errEl.textContent = 'You must accept the Terms & Agreement to register.'; errEl.classList.add('show'); }
+        if (errEl) { errEl.textContent = 'You must accept the Terms & Conditions to register.'; errEl.classList.add('show'); }
         return false;
       }
       if (errEl) errEl.classList.remove('show');
