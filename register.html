@@ -175,44 +175,47 @@
 
               <div class="form-divider"></div>
 
-              <!-- Password -->
-              <div class="form-group">
-                <label class="form-label" for="reg-password">
-                  Password <span class="required" aria-hidden="true">*</span>
-                </label>
-                <input
-                  type="password"
-                  id="reg-password"
-                  class="form-input"
-                  placeholder="Create a strong password"
-                  autocomplete="new-password"
-                  aria-required="true"
-                  aria-describedby="reg-password-error password-strength"
-                />
-                <div id="password-strength" class="password-strength" aria-live="polite">
-                  <div class="strength-bar">
-                    <div class="strength-fill"></div>
+              <!-- Password + Confirm Password (side by side) -->
+              <div class="form-row">
+                <!-- Password -->
+                <div class="form-group">
+                  <label class="form-label" for="reg-password">
+                    Password <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="password"
+                    id="reg-password"
+                    class="form-input"
+                    placeholder="Create a strong password"
+                    autocomplete="new-password"
+                    aria-required="true"
+                    aria-describedby="reg-password-error password-strength"
+                  />
+                  <div id="password-strength" class="password-strength" aria-live="polite">
+                    <div class="strength-bar">
+                      <div class="strength-fill"></div>
+                    </div>
+                    <span class="strength-text"></span>
                   </div>
-                  <span class="strength-text"></span>
+                  <span id="reg-password-error" class="error-msg" role="alert"></span>
                 </div>
-                <span id="reg-password-error" class="error-msg" role="alert"></span>
-              </div>
 
-              <!-- Confirm Password -->
-              <div class="form-group">
-                <label class="form-label" for="reg-confirm-password">
-                  Confirm Password <span class="required" aria-hidden="true">*</span>
-                </label>
-                <input
-                  type="password"
-                  id="reg-confirm-password"
-                  class="form-input"
-                  placeholder="Re-enter your password"
-                  autocomplete="new-password"
-                  aria-required="true"
-                  aria-describedby="reg-confirm-password-error"
-                />
-                <span id="reg-confirm-password-error" class="error-msg" role="alert"></span>
+                <!-- Confirm Password -->
+                <div class="form-group">
+                  <label class="form-label" for="reg-confirm-password">
+                    Confirm Password <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="password"
+                    id="reg-confirm-password"
+                    class="form-input"
+                    placeholder="Re-enter your password"
+                    autocomplete="new-password"
+                    aria-required="true"
+                    aria-describedby="reg-confirm-password-error"
+                  />
+                  <span id="reg-confirm-password-error" class="error-msg" role="alert"></span>
+                </div>
               </div>
 
               <div class="form-divider"></div>
