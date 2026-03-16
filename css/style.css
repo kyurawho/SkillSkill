@@ -2064,6 +2064,7 @@ textarea {
   }
 
   .nav-link {
+    display: block;
     padding: 0.75rem 1rem;
     border-radius: var(--radius-md);
   }
