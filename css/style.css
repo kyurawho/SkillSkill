@@ -2035,7 +2035,6 @@ textarea {
 
   .hamburger-btn {
     display: flex;
-    order: -1; /* always at far-left, before the logo */
   }
 
   .main-nav {
