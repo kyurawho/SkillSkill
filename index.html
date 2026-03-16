@@ -1,17 +1,347 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="assets/styles/style.css">
-    </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VisualSkill - Learn to Code, Shape Your Future. Hundreds of interactive coding courses to kickstart your tech career." />
+  <title>VisualSkill - Learn to Code, Shape Your Future</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
 
-    <body>
-        <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="career.html">Career</a>
-            <a href="course.html">Course</a>
-            <a href="about.html">About Us</a>
-            <a href="register.html">Register</a>
+  <!-- ── HEADER ──────────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="VisualSkill Home">
+          <span class="logo-icon">&lt;/&gt;</span>
+          <span class="logo-text">Visual<span>Skill</span></span>
+        </a>
+
+        <button class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+        <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+          <ul class="nav-links" role="list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="course.html" class="nav-link">Courses</a></li>
+            <li><a href="career.html" class="nav-link">Career</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+          </ul>
+          <div class="nav-cta">
+            <a href="register.html" class="btn btn-primary btn-sm">Get Started</a>
+          </div>
         </nav>
-        
-    </body>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── MAIN ────────────────────────────────────────────────── -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-badge">
+              <span class="hero-badge-dot"></span>
+              New: Flutter 3.0 Course is now live!
+            </div>
+            <h1 class="hero-title">
+              Learn to Code,<br />
+              <span class="highlight">Shape Your Future</span>
+            </h1>
+            <p class="hero-subtitle">
+              Master in-demand programming skills with hands-on projects, expert mentors, and a community of 50,000+ learners worldwide.
+            </p>
+            <div class="hero-actions">
+              <a href="course.html" class="btn btn-white btn-lg">Start Learning</a>
+              <a href="career.html" class="btn btn-secondary btn-lg">Explore Careers</a>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-card">
+              <div class="hero-code-header">
+                <span class="hero-code-dot"></span>
+                <span class="hero-code-dot"></span>
+                <span class="hero-code-dot"></span>
+                <span class="hero-code-title">main.js</span>
+              </div>
+              <div class="hero-code-body">
+                <span class="code-line"><span class="code-keyword">const</span> <span class="code-variable">skill</span> = {</span>
+                <span class="code-line code-indent"><span class="code-variable">name</span>: <span class="code-string">'JavaScript'</span>,</span>
+                <span class="code-line code-indent"><span class="code-variable">level</span>: <span class="code-string">'Beginner'</span>,</span>
+                <span class="code-line code-indent"><span class="code-variable">progress</span>: <span class="code-string">42</span></span>
+                <span class="code-line">};</span>
+                <span class="code-line">&nbsp;</span>
+                <span class="code-line"><span class="code-keyword">function</span> <span class="code-function">learnToday</span>() {</span>
+                <span class="code-line code-indent"><span class="code-comment">// You've got this! 🚀</span></span>
+                <span class="code-line code-indent"><span class="code-keyword">return</span> <span class="code-string">'Success!'</span>;</span>
+                <span class="code-line">}</span>
+              </div>
+              <div class="hero-stats-row">
+                <div class="hero-stat">
+                  <span class="hero-stat-num">500+</span>
+                  <span class="hero-stat-label">Courses</span>
+                </div>
+                <div class="hero-stat">
+                  <span class="hero-stat-num">50K+</span>
+                  <span class="hero-stat-label">Learners</span>
+                </div>
+                <div class="hero-stat">
+                  <span class="hero-stat-num">100+</span>
+                  <span class="hero-stat-label">Instructors</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section" aria-label="Platform statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <article class="stat-card animate-on-scroll">
+            <div class="stat-icon stat-icon-primary" aria-hidden="true">📚</div>
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Courses Available</div>
+            <div class="stat-description">Covering web dev, mobile, data science, design &amp; more</div>
+          </article>
+          <article class="stat-card animate-on-scroll">
+            <div class="stat-icon stat-icon-secondary" aria-hidden="true">🎓</div>
+            <div class="stat-number">50,000+</div>
+            <div class="stat-label">Active Students</div>
+            <div class="stat-description">Learners from over 80 countries worldwide</div>
+          </article>
+          <article class="stat-card animate-on-scroll">
+            <div class="stat-icon stat-icon-accent" aria-hidden="true">👩‍💻</div>
+            <div class="stat-number">100+</div>
+            <div class="stat-label">Expert Instructors</div>
+            <div class="stat-description">Industry professionals and senior engineers</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Courses Section -->
+    <section class="top-courses-section" aria-labelledby="top-courses-heading">
+      <div class="container">
+        <header class="section-header animate-on-scroll">
+          <span class="section-tag">Popular Courses</span>
+          <h2 class="section-title" id="top-courses-heading">Top Picks for You</h2>
+          <p class="section-subtitle">Explore our most popular courses and start building real-world skills today.</p>
+        </header>
+
+        <div class="courses-grid" role="list">
+          <article class="course-card animate-on-scroll" role="listitem">
+            <div class="course-thumb course-thumb-webdev" aria-hidden="true">
+              <span class="course-thumb-icon">🌐</span>
+            </div>
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="badge badge-beginner">Beginner</span>
+                <span class="course-duration">⏱ 40 hrs</span>
+              </div>
+              <h3 class="course-title">HTML &amp; CSS Fundamentals</h3>
+              <p class="course-desc">Build your first website from scratch. Learn structure, styling, and responsive design principles.</p>
+              <div class="course-footer">
+                <span class="course-lessons">32 Lessons</span>
+                <a href="course.html" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="course-card animate-on-scroll" role="listitem">
+            <div class="course-thumb course-thumb-js" aria-hidden="true">
+              <span class="course-thumb-icon">⚡</span>
+            </div>
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="badge badge-intermediate">Intermediate</span>
+                <span class="course-duration">⏱ 55 hrs</span>
+              </div>
+              <h3 class="course-title">JavaScript Essentials</h3>
+              <p class="course-desc">Master JavaScript from variables to async programming. Build interactive web applications.</p>
+              <div class="course-footer">
+                <span class="course-lessons">48 Lessons</span>
+                <a href="course.html" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="course-card animate-on-scroll" role="listitem">
+            <div class="course-thumb course-thumb-python" aria-hidden="true">
+              <span class="course-thumb-icon">🐍</span>
+            </div>
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="badge badge-beginner">Beginner</span>
+                <span class="course-duration">⏱ 35 hrs</span>
+              </div>
+              <h3 class="course-title">Python for Beginners</h3>
+              <p class="course-desc">Start your programming journey with Python — one of the most versatile languages in the world.</p>
+              <div class="course-footer">
+                <span class="course-lessons">36 Lessons</span>
+                <a href="course.html" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="course-card animate-on-scroll" role="listitem">
+            <div class="course-thumb course-thumb-react" aria-hidden="true">
+              <span class="course-thumb-icon">⚛️</span>
+            </div>
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="badge badge-intermediate">Intermediate</span>
+                <span class="course-duration">⏱ 60 hrs</span>
+              </div>
+              <h3 class="course-title">React.js Complete Guide</h3>
+              <p class="course-desc">Build modern, reactive user interfaces with React. Hooks, state management, and real projects.</p>
+              <div class="course-footer">
+                <span class="course-lessons">52 Lessons</span>
+                <a href="course.html" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="course-card animate-on-scroll" role="listitem">
+            <div class="course-thumb course-thumb-data" aria-hidden="true">
+              <span class="course-thumb-icon">📊</span>
+            </div>
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="badge badge-intermediate">Intermediate</span>
+                <span class="course-duration">⏱ 50 hrs</span>
+              </div>
+              <h3 class="course-title">Data Analysis with Python</h3>
+              <p class="course-desc">Explore data with Pandas, NumPy, and Matplotlib. Visualize insights and build analytical skills.</p>
+              <div class="course-footer">
+                <span class="course-lessons">44 Lessons</span>
+                <a href="course.html" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="course-card animate-on-scroll" role="listitem">
+            <div class="course-thumb course-thumb-design" aria-hidden="true">
+              <span class="course-thumb-icon">🎨</span>
+            </div>
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="badge badge-beginner">Beginner</span>
+                <span class="course-duration">⏱ 30 hrs</span>
+              </div>
+              <h3 class="course-title">UI/UX Design Principles</h3>
+              <p class="course-desc">Learn user-centered design, wireframing, prototyping, and how to craft beautiful digital products.</p>
+              <div class="course-footer">
+                <span class="course-lessons">28 Lessons</span>
+                <a href="course.html" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-header section-header-cta">
+          <a href="course.html" class="btn btn-secondary btn-lg">View All Courses →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Career / CTA Section -->
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-content">
+          <div class="cta-text">
+            <span class="section-tag section-tag-white">We're Hiring</span>
+            <h2 class="cta-title" id="cta-heading">Join Our Team at VisualSkill</h2>
+            <p class="cta-desc">
+              Passionate about education and technology? We're looking for talented people to help shape the future of coding education. Explore open positions and grow with us.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <a href="career.html" class="btn btn-white btn-lg">View Open Positions</a>
+            <a href="about.html" class="btn btn-secondary btn-lg">Learn About Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ────────────────────────────────────────────── -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="VisualSkill Home">
+            <span class="logo-icon">&lt;/&gt;</span>
+            <span class="logo-text">Visual<span>Skill</span></span>
+          </a>
+          <p class="footer-tagline">Empowering the next generation of developers with practical, project-based coding education.</p>
+          <div class="footer-social" aria-label="Social media links">
+            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-link" aria-label="GitHub">⌨</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Courses</h3>
+          <ul class="footer-links">
+            <li><a href="course.html">Web Development</a></li>
+            <li><a href="course.html">Mobile Development</a></li>
+            <li><a href="course.html">Data Science</a></li>
+            <li><a href="course.html">UI/UX Design</a></li>
+            <li><a href="course.html">DevOps</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Company</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="career.html">Careers</a></li>
+            <li><a href="about.html">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Support</h3>
+          <ul class="footer-links">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2024 VisualSkill. All rights reserved.</p>
+        <nav class="footer-bottom-links" aria-label="Footer legal links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
 </html>
