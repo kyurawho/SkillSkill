@@ -1749,6 +1749,12 @@ textarea {
   accent-color: var(--color-primary);
   cursor: pointer;
   flex-shrink: 0;
+  outline: none;
+}
+
+.radio-label:focus-within {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 /* Checkbox */
