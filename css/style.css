@@ -51,6 +51,11 @@
   --container-padding: 1.5rem;
 }
 
+/* ── Utility ──────────────────────────────────────────────── */
+.visually-hidden {
+  display: none;
+}
+
 /* ── Reset & Base ─────────────────────────────────────────── */
 *,
 *::before,

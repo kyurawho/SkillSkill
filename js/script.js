@@ -435,7 +435,7 @@
       if (v1 && v2 && v3 && v4 && v5 && v6 && v7) {
         var formEl = $('#register-form');
         var successEl = $('#form-success');
-        if (formEl) formEl.style.display = 'none';
+        if (formEl) formEl.classList.add('visually-hidden');
         if (successEl) successEl.classList.add('show');
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }
