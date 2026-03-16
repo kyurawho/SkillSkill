@@ -315,7 +315,6 @@ textarea {
 .header-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
 }
 
@@ -356,14 +355,17 @@ textarea {
 
 /* Main Navigation */
 .main-nav {
+  flex: 1;
   display: flex;
   align-items: center;
   gap: 0.25rem;
 }
 
 .nav-links {
+  flex: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.25rem;
 }
 
@@ -2045,6 +2047,7 @@ textarea {
   .nav-links {
     flex-direction: column;
     align-items: stretch;
+    justify-content: flex-start;
     gap: 0;
   }
 
