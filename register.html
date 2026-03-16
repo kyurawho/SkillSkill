@@ -191,12 +191,6 @@
                     aria-required="true"
                     aria-describedby="reg-password-error password-strength"
                   />
-                  <div id="password-strength" class="password-strength" aria-live="polite">
-                    <div class="strength-bar">
-                      <div class="strength-fill"></div>
-                    </div>
-                    <span class="strength-text"></span>
-                  </div>
                   <span id="reg-password-error" class="error-msg" role="alert"></span>
                 </div>
 
@@ -216,6 +210,14 @@
                   />
                   <span id="reg-confirm-password-error" class="error-msg" role="alert"></span>
                 </div>
+              </div>
+
+              <!-- Password strength (shown below both fields) -->
+              <div id="password-strength" class="password-strength" aria-live="polite">
+                <div class="strength-bar">
+                  <div class="strength-fill"></div>
+                </div>
+                <span class="strength-text"></span>
               </div>
 
               <div class="form-divider"></div>
