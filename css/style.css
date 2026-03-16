@@ -182,6 +182,20 @@ textarea {
   box-shadow: var(--shadow-lg);
 }
 
+.btn-outline-white {
+  background-color: transparent;
+  color: var(--color-white);
+  border-color: rgba(255, 255, 255, 0.75);
+}
+
+.btn-outline-white:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border-color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
 .btn-success {
   background-color: var(--color-secondary);
   color: var(--color-white);
