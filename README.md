@@ -11,7 +11,7 @@ VisualSkill is a front-end website for a fictional coding education platform. It
 | Page | File | Description |
 |------|------|-------------|
 | Home | `index.html` | Hero, stats, top courses, career CTA |
-| Courses | `course.html` | Full course catalog with search & filter |
+| Courses | `course.html` | Full course catalog with category filter |
 | Career | `career.html` | Open positions, job cards, FAQ accordion |
 | About | `about.html` | Story, vision/mission, values, team, stats |
 | Register | `register.html` | Registration form with full validation |
@@ -59,7 +59,7 @@ SkillSkill/
    - Date of birth: compares Date objects for 18+ age check
    - Password strength: checks for uppercase and digit chars
    - Password match: strict equality comparison
-4. **Course search & filter** — real-time title search + category buttons
+4. **Course category filter** — filter courses by category buttons
 5. **FAQ accordion** — expand/collapse with smooth max-height transition
 6. **Scroll animations** — IntersectionObserver adds `.visible` class
 

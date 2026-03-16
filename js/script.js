@@ -98,40 +98,27 @@
   }
 
   /* ============================================================
-     4. COURSE SEARCH & FILTER
+     4. COURSE FILTER
      ============================================================ */
   function initCourseFilter() {
-    var searchInput = $('#course-search');
     var filterBtns = $$('.filter-btn');
     var courseCards = $$('.course-card');
     var countEl = $('#courses-visible-count');
     var noResults = $('#no-results');
 
-    if (!searchInput && filterBtns.length === 0) return;
+    if (filterBtns.length === 0) return;
 
     var activeCategory = 'all';
 
-    function normalizeStr(str) {
-      var result = '';
-      for (var i = 0; i < str.length; i++) {
-        result += str[i].toLowerCase();
-      }
-      return result;
-    }
-
     function filterCourses() {
-      var query = searchInput ? normalizeStr(searchInput.value.trim()) : '';
       var visible = 0;
 
       courseCards.forEach(function (card) {
-        var titleEl = card.querySelector('.course-title');
-        var title = titleEl ? normalizeStr(titleEl.textContent.trim()) : '';
         var category = card.getAttribute('data-category') || 'all';
 
-        var matchesSearch = query === '' || title.indexOf(query) !== -1;
         var matchesCategory = activeCategory === 'all' || category === activeCategory;
 
-        if (matchesSearch && matchesCategory) {
+        if (matchesCategory) {
           card.classList.remove('hidden');
           visible++;
         } else {
@@ -148,10 +135,6 @@
           noResults.classList.add('no-results-hidden');
         }
       }
-    }
-
-    if (searchInput) {
-      searchInput.addEventListener('input', filterCourses);
     }
 
     filterBtns.forEach(function (btn) {
