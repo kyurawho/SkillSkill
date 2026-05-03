@@ -788,6 +788,23 @@ textarea {
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
 }
 
+.course-thumb-img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.35));
+}
+
+.stat-icon img,
+.value-icon img,
+.job-icon img,
+.vision-icon img,
+.benefit-icon img {
+  width: 65%;
+  height: 65%;
+  object-fit: contain;
+}
+
 .course-thumb-webdev {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
