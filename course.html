@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore VisualSkill's full catalog of coding courses. Filter by category and find the perfect course for your goals." />
+  <title>Courses - VisualSkill</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── HEADER ──────────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="VisualSkill Home">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=36&h=36&fit=crop&q=80" alt="VisualSkill" class="logo-icon">
+        <span class="logo-text">Visual<span>Skill</span></span>
+      </a>
+
+      <button class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <ul class="nav-links" role="list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="course.html" class="nav-link">Courses</a></li>
+          <li><a href="career.html" class="nav-link">Career</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="register.html" class="btn btn-primary btn-sm">Get Started</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── MAIN ────────────────────────────────────────────────── -->
+  <main>
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-label="Courses hero">
+      <div class="container">
+        <div class="page-hero-content">
+          <h1 class="page-hero-title">Explore Our Courses</h1>
+          <p class="page-hero-subtitle">From beginner-friendly introductions to advanced professional tracks — find the course that fits your goals.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter Controls -->
+    <section class="course-controls" aria-label="Course filter">
+      <div class="container">
+        <div class="filter-bar" role="group" aria-label="Filter courses by category">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="webdev">Web Dev</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="data">Data Science</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+          <button class="filter-btn" data-filter="devops">DevOps</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Grid -->
+    <section class="courses-section" aria-labelledby="all-courses-heading">
+      <div class="container">
+        <h2 class="sr-only" id="all-courses-heading">All Courses</h2>
+        <p class="courses-count">Showing <span id="courses-visible-count">12</span> courses</p>
+
+        <div class="courses-grid-12" role="list" id="courses-grid">
+
+          <!-- 1 -->
+          <article class="course-card" data-category="webdev" role="listitem">
+            <div class="course-thumb course-thumb-webdev" aria-hidden="true">
+              <img class="course-thumb-img" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=600&h=200&fit=crop&q=80" alt="HTML & CSS code on screen">
+            </div>
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="badge badge-beginner">Beginner</span>
+                <span class="course-duration">⏱ 40 hrs</span>
+              </div>
+              <h3 class="course-title">HTML &amp; CSS Fundamentals</h3>
+              <p class="course-desc">Master the building blocks of the web. Learn semantic HTML, modern CSS, and responsive design from the ground up.</p>
+              <div class="course-footer">
+                <span class="course-lessons">📖 32 Lessons</span>
+                <a href="register.html" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="course-card" data-category="webdev" role="listitem">
+            <div class="course-thumb course-thumb-js" aria-hidden="true">
+              <img class="course-thumb-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=200&fit=crop&q=80" alt="JavaScript code on dark screen">
+            </div>
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="badge badge-intermediate">Intermediate</span>
+                <span class="course-duration">⏱ 55 hrs</span>
+              </div>
+              <h3 class="course-title">JavaScript Essentials</h3>
+              <p class="course-desc">Go from variables to async/await. Build interactive UI, work with APIs, and understand the modern JS ecosystem.</p>
+              <div class="course-footer">
+                <span class="course-lessons">📖 48 Lessons</span>
+                <a href="register.html" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="course-card" data-category="webdev" role="listitem">
+            <div class="course-thumb course-thumb-react" aria-hidden="true">
+              <img class="course-thumb-img" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=200&fit=crop&q=80" alt="React web development on laptop">
+            </div>
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="badge badge-intermediate">Intermediate</span>
+                <span class="course-duration">⏱ 60 hrs</span>
+              </div>
+              <h3 class="course-title">React.js Complete Guide</h3>
+              <p class="course-desc">Build powerful single-page apps with React. Covers hooks, context API, Redux, React Router, and testing.</p>
+              <div class="course-footer">
+                <span class="course-lessons">📖 52 Lessons</span>
+                <a href="register.html" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="course-card" data-category="webdev" role="listitem">
+            <div class="course-thumb course-thumb-python" aria-hidden="true">
+              <img class="course-thumb-img" src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=600&h=200&fit=crop&q=80" alt="Python code on laptop screen">
+            </div>
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="badge badge-beginner">Beginner</span>
+                <span class="course-duration">⏱ 35 hrs</span>
+              </div>
+              <h3 class="course-title">Python for Beginners</h3>
+              <p class="course-desc">Learn Python from scratch: variables, functions, OOP, file I/O, and basic web scraping with real projects.</p>
+              <div class="course-footer">
+                <span class="course-lessons">📖 36 Lessons</span>
+                <a href="register.html" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="course-card" data-category="mobile" role="listitem">
+            <div class="course-thumb course-thumb-flutter" aria-hidden="true">
+              <img class="course-thumb-img" src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=200&fit=crop&q=80" alt="Mobile app development with Flutter">
+            </div>
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="badge badge-intermediate">Intermediate</span>
+                <span class="course-duration">⏱ 65 hrs</span>
+              </div>
+              <h3 class="course-title">Flutter &amp; Dart Masterclass</h3>
+              <p class="course-desc">Create cross-platform mobile apps for iOS and Android with Flutter. Learn widgets, state management, and Firebase.</p>
+              <div class="course-footer">
+                <span class="course-lessons">📖 58 Lessons</span>
+                <a href="register.html" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="course-card" data-category="mobile" role="listitem">
+            <div class="course-thumb course-thumb-mobile" aria-hidden="true">
+              <img class="course-thumb-img" src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?w=600&h=200&fit=crop&q=80" alt="Android development with Kotlin">
+            </div>
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="badge badge-advanced">Advanced</span>
+                <span class="course-duration">⏱ 70 hrs</span>
+              </div>
+              <h3 class="course-title">Android Development with Kotlin</h3>
+              <p class="course-desc">Build native Android apps with Kotlin, Jetpack Compose, Room database, and MVVM architecture patterns.</p>
+              <div class="course-footer">
+                <span class="course-lessons">📖 64 Lessons</span>
+                <a href="register.html" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7 -->
+          <article class="course-card" data-category="data" role="listitem">
+            <div class="course-thumb course-thumb-data" aria-hidden="true">
+              <img class="course-thumb-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=200&fit=crop&q=80" alt="Data analysis dashboard with charts">
+            </div>
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="badge badge-intermediate">Intermediate</span>
+                <span class="course-duration">⏱ 50 hrs</span>
+              </div>
+              <h3 class="course-title">Data Analysis with Python</h3>
+              <p class="course-desc">Analyze, visualize, and interpret data with Pandas, NumPy, Matplotlib, and Seaborn. Work on real datasets.</p>
+              <div class="course-footer">
+                <span class="course-lessons">📖 44 Lessons</span>
+                <a href="register.html" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8 -->
+          <article class="course-card" data-category="data" role="listitem">
+            <div class="course-thumb course-thumb-ml" aria-hidden="true">
+              <img class="course-thumb-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=200&fit=crop&q=80" alt="Machine learning and artificial intelligence">
+            </div>
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="badge badge-advanced">Advanced</span>
+                <span class="course-duration">⏱ 80 hrs</span>
+              </div>
+              <h3 class="course-title">Machine Learning Fundamentals</h3>
+              <p class="course-desc">Explore supervised and unsupervised learning, neural networks, and model evaluation using Scikit-learn and TensorFlow.</p>
+              <div class="course-footer">
+                <span class="course-lessons">📖 72 Lessons</span>
+                <a href="register.html" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9 -->
+          <article class="course-card" data-category="design" role="listitem">
+            <div class="course-thumb course-thumb-design" aria-hidden="true">
+              <img class="course-thumb-img" src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=200&fit=crop&q=80" alt="UI/UX design tools on desk">
+            </div>
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="badge badge-beginner">Beginner</span>
+                <span class="course-duration">⏱ 30 hrs</span>
+              </div>
+              <h3 class="course-title">UI/UX Design Principles</h3>
+              <p class="course-desc">Learn user-centered design thinking, wireframing, prototyping, color theory, and typography for digital products.</p>
+              <div class="course-footer">
+                <span class="course-lessons">📖 28 Lessons</span>
+                <a href="register.html" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 10 -->
+          <article class="course-card" data-category="design" role="listitem">
+            <div class="course-thumb course-thumb-figma" aria-hidden="true">
+              <img class="course-thumb-img" src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=600&h=200&fit=crop&q=80" alt="Designer working with Figma on laptop">
+            </div>
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="badge badge-intermediate">Intermediate</span>
+                <span class="course-duration">⏱ 38 hrs</span>
+              </div>
+              <h3 class="course-title">Figma for Product Designers</h3>
+              <p class="course-desc">Master Figma from scratch: components, auto layout, design systems, interactive prototypes, and handoff to developers.</p>
+              <div class="course-footer">
+                <span class="course-lessons">📖 34 Lessons</span>
+                <a href="register.html" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 11 -->
+          <article class="course-card" data-category="devops" role="listitem">
+            <div class="course-thumb course-thumb-docker" aria-hidden="true">
+              <img class="course-thumb-img" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=200&fit=crop&q=80" alt="Server racks for Docker and Kubernetes">
+            </div>
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="badge badge-intermediate">Intermediate</span>
+                <span class="course-duration">⏱ 45 hrs</span>
+              </div>
+              <h3 class="course-title">Docker &amp; Kubernetes Basics</h3>
+              <p class="course-desc">Containerize applications with Docker and orchestrate them with Kubernetes. CI/CD pipelines and cloud deployments.</p>
+              <div class="course-footer">
+                <span class="course-lessons">📖 40 Lessons</span>
+                <a href="register.html" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 12 -->
+          <article class="course-card" data-category="devops" role="listitem">
+            <div class="course-thumb course-thumb-devops" aria-hidden="true">
+              <img class="course-thumb-img" src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&h=200&fit=crop&q=80" alt="AWS cloud data center">
+            </div>
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="badge badge-advanced">Advanced</span>
+                <span class="course-duration">⏱ 55 hrs</span>
+              </div>
+              <h3 class="course-title">AWS Cloud Practitioner</h3>
+              <p class="course-desc">Get certified with AWS. Learn cloud concepts, core services, security, architecture, and pricing models with hands-on labs.</p>
+              <div class="course-footer">
+                <span class="course-lessons">📖 48 Lessons</span>
+                <a href="register.html" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- No Results placeholder -->
+          <div id="no-results" class="no-results no-results-hidden" aria-live="polite">
+            <div class="no-results-icon" aria-hidden="true">🔍</div>
+            <h3 class="no-results-title">No courses found</h3>
+            <p>Select a different category.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" aria-labelledby="course-cta-heading">
+      <div class="container">
+        <div class="cta-content">
+          <div class="cta-text">
+            <h2 class="cta-title" id="course-cta-heading">Ready to Start Learning?</h2>
+            <p class="cta-desc">Create your free account and get instant access to beginner-friendly courses. No credit card required.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="register.html" class="btn btn-white btn-lg">Create Free Account</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ────────────────────────────────────────────── -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="VisualSkill Home">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=36&h=36&fit=crop&q=80" alt="VisualSkill" class="logo-icon">
+            <span class="logo-text">Visual<span>Skill</span></span>
+          </a>
+          <p class="footer-tagline">Empowering the next generation of developers with practical, project-based coding education.</p>
+          <div class="footer-social" aria-label="Social media links">
+            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-link" aria-label="GitHub">⌨</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Courses</h3>
+          <ul class="footer-links">
+            <li><a href="course.html">Web Development</a></li>
+            <li><a href="course.html">Mobile Development</a></li>
+            <li><a href="course.html">Data Science</a></li>
+            <li><a href="course.html">UI/UX Design</a></li>
+            <li><a href="course.html">DevOps</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Company</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="career.html">Careers</a></li>
+            <li><a href="about.html">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Support</h3>
+          <ul class="footer-links">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 VisualSkill. All rights reserved.</p>
+        <nav class="footer-bottom-links" aria-label="Footer legal links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
