@@ -711,14 +711,15 @@ textarea {
 }
 
 .stat-icon {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 1rem;
   font-size: 1.5rem;
+  overflow: hidden;
 }
 
 .stat-icon-primary { background-color: rgba(79, 70, 229, 0.1); }
@@ -789,10 +790,12 @@ textarea {
 }
 
 .course-thumb-img {
-  height: 80px;
-  width: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.35));
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .stat-icon img,
@@ -800,9 +803,10 @@ textarea {
 .job-icon img,
 .vision-icon img,
 .benefit-icon img {
-  width: 65%;
-  height: 65%;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
 }
 
 .course-thumb-webdev {
@@ -1024,8 +1028,8 @@ textarea {
 }
 
 .job-icon {
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: var(--radius-lg);
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
   display: flex;
@@ -1033,6 +1037,7 @@ textarea {
   justify-content: center;
   font-size: 1.25rem;
   flex-shrink: 0;
+  overflow: hidden;
 }
 
 .job-type-badge {
@@ -1377,14 +1382,15 @@ textarea {
 .vision-card.mission::before { background: linear-gradient(90deg, var(--color-secondary), #6EE7B7); }
 
 .vision-icon {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.75rem;
   margin-bottom: 1.25rem;
+  overflow: hidden;
 }
 
 .vision-icon-primary { background-color: rgba(79, 70, 229, 0.1); }
@@ -1431,14 +1437,15 @@ textarea {
 }
 
 .value-icon {
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.75rem;
   margin: 0 auto 1.25rem;
+  overflow: hidden;
 }
 
 .value-icon-1 { background: linear-gradient(135deg, rgba(79,70,229,0.15), rgba(129,140,248,0.15)); }
@@ -1620,8 +1627,8 @@ textarea {
 }
 
 .benefit-icon {
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: var(--radius-md);
   background-color: rgba(79, 70, 229, 0.1);
   display: flex;
@@ -1629,6 +1636,7 @@ textarea {
   justify-content: center;
   font-size: 1.1rem;
   flex-shrink: 0;
+  overflow: hidden;
 }
 
 .benefit-text strong {
